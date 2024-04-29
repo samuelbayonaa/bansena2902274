@@ -1,10 +1,14 @@
 package org.bansena.cgmlti.java.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CuentaBancaria {
 
     Long numero;
     Double saldo;
     String divisa;
+    List<CuotaManejo> lManejos = new ArrayList<>();
 
 
     public CuentaBancaria(Long numero, Double saldo, String divisa) {
