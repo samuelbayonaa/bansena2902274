@@ -44,6 +44,12 @@ public class TarjetaDebito<T extends Habilitante> {
         this.cuotaManejo = cuotaManejo;
     }
 
+    @Override
+    public String toString() {
+        return "Numero de Tarjeta: " + numeroTarjeta + ", fecha de Vencimiento: " + fechaVencimiento + ", tope: "
+                + tope;
+    }
+
     
     
 

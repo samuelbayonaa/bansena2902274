@@ -5,14 +5,16 @@ import java.time.LocalDate;
 public class PruebaTarjetaDebito {
     public static void main(String[] args) {
         //
-        //
-        Campania c = new Campania(LocalDate.now(), 
-        LocalDate.of(2024, 8, 6), 
-        500.0, 
-        "Adso"
+        Campania c = new Campania(
+            LocalDate.now(), 
+            LocalDate.of(2024, 8, 6), 
+            500.0, 
+            "ADSO"
         );
+
         //crear cuota de manejo
         CuotaManejo<Campania> cm = new CuotaManejo<Campania>(c);
+
         //asignar la cuota de manejo a una tarjeta de debito
         TarjetaDebito<Campania> t1 = new TarjetaDebito<>(
             224324L,
@@ -35,6 +37,6 @@ public class PruebaTarjetaDebito {
 
         cb1.lManejos.add(cb1);
 
-        System.out.println("cuota" + cb1.lManejos);
+        System.out.println(cm + "," + cb1);
     }
 }

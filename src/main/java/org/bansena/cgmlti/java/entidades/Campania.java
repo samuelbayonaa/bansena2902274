@@ -18,4 +18,10 @@ public class Campania extends Habilitante {
         this.nombre = nombre;
     }
 
+    @Override
+    public String toString() {
+        return "nombre: " + nombre + " ";
+    }
+
+
 }

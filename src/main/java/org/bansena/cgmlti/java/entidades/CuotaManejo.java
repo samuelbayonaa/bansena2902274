@@ -48,5 +48,12 @@ public class CuotaManejo<E extends Habilitante> {
         this.Habilitante = habilitante;
     }
 
+    @Override
+    public String toString() {
+        return "CuotaManejo: fecha de inicio: " + fechainicio + ", fecha de Fin: " + fechaFin + ", valor: " + valor
+                + ", Habilitante: " + Habilitante;
+    }
+
+    
     
 }

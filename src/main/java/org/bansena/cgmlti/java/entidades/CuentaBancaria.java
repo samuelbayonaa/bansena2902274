@@ -52,6 +52,12 @@ public class CuentaBancaria <T extends Habilitante> {
         this.tarjetaDebito = tarjetaDebito;
     }
 
+    @Override
+    public String toString() {
+        return "CuentaBancaria: numero: " + numero + ", saldo: " + saldo + ", divisa: " + divisa + ", tarjeta de Debito: "
+                + tarjetaDebito;
+    }
+
     
 
 
