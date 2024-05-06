@@ -35,7 +35,7 @@ public class PruebaTarjetaDebito {
 
         //Vincular cuenta bancaria a la cuota de manejos
 
-        cb1.lManejos.add(cb1);
+        cb1.lManejos.add(cm);
 
         System.out.println(cm + "," + cb1);
     }
